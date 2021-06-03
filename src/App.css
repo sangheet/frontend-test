@@ -1,38 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 h2 h3 h4 h5 {
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.itemCard {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 10px;
+  background-color: white;
+  border-bottom: 2px solid #adadad;
+  border-right: 2px solid #adadad;
+  padding: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  box-shadow: 8px 11px 3px 0px #a6a6a669;
+  align-items: center;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+}
+.itemCard:hover {
+  box-shadow: 8px 15px 3px 0px #6d6d6d69;
+  transition: all 0.5s;
+  border: 2px solid #8c1111;
+}
+
+button {
+  background-color: crimson !important;
+  color: white !important;
+}
+img {
+  border-bottom: 2px dotted grey;
+  padding-bottom: 10px;
+  max-width: 100%;
+  height: 300px;
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+}
+
+.logo {
+  color: #f10d0d !important;
+  letter-spacing: -3px;
+  text-decoration-line: overline;
+  text-decoration-color: #ffffff;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.mainContainer {
+  padding: 40px;
+  padding-top: 140px;
+}
+svg {
+  margin: 10px;
+}
+
+.navBar {
+  position: fixed;
+  height: 100px;
+  border-bottom: 2px solid #980808;
+  background-color: black;
   color: white;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.cartContainer {
+  padding: 10px;
+  width: 10vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartList {
+  text-decoration: none;
+}
+
+.tag {
+  width: fit-content;
+  background-color: #000000;
+  padding: 15px;
+  color: white;
+  border-radius: 100px;
+  text-align: center;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #b20101 #000000;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #b20101;
+  border-radius: 10px;
+  border: 0px solid #ffffff;
 }
